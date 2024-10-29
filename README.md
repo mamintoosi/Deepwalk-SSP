@@ -1,6 +1,6 @@
 # Deepwalk-SSP  
 
-Deepwalk-SSP is a Python repository that implements a novel approach for student representation using DeepWalk, a network representation learning technique. The repository contains the code and data used in the paper "DeepWalk for Student Sectioning" submitted to the Knowledge-Based Systems journal.  
+Deepwalk-SSP is a Python repository that implements a novel approach for student representation using DeepWalk, a network representation learning technique. The repository contains the code and data used in the paper "DeepWalk for Student Sectioning".  
 
 ![](results/random-walk-2-node40.png)
 
