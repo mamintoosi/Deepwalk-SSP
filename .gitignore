@@ -162,3 +162,8 @@ cython_debug/
 #.idea/
 /doc
 /.freebuff
+*.spl
+*.gz
+*.out
+*.aux
+/paper
