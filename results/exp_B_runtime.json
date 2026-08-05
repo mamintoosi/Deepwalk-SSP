@@ -1,0 +1,56 @@
+{
+  "1": {
+    "graph_construction": 0.020247000036761165,
+    "random_walks": 0.22517689992673695,
+    "word2vec_training": 1.2015176999848336,
+    "total": 1.4469415999483317,
+    "num_students": 74,
+    "num_edges": 2701,
+    "clustering": 0.053584199864417315
+  },
+  "2": {
+    "graph_construction": 0.009891499998047948,
+    "random_walks": 0.15228129993192852,
+    "word2vec_training": 0.6891797999851406,
+    "total": 0.851352599915117,
+    "num_students": 51,
+    "num_edges": 1275,
+    "clustering": 0.05556549993343651
+  },
+  "3": {
+    "graph_construction": 0.0076592001132667065,
+    "random_walks": 0.15379270003177226,
+    "word2vec_training": 0.661338800098747,
+    "total": 0.822790700243786,
+    "num_students": 48,
+    "num_edges": 1128,
+    "clustering": 0.049883199855685234
+  },
+  "4": {
+    "graph_construction": 0.007926200050860643,
+    "random_walks": 0.13933879998512566,
+    "word2vec_training": 0.6549267000518739,
+    "total": 0.8021917000878602,
+    "num_students": 49,
+    "num_edges": 1176,
+    "clustering": 0.05818570009432733
+  },
+  "5": {
+    "graph_construction": 0.008791399886831641,
+    "random_walks": 0.14440640015527606,
+    "word2vec_training": 0.6984528000466526,
+    "total": 0.8516506000887603,
+    "num_students": 52,
+    "num_edges": 1326,
+    "clustering": 0.06886479980312288
+  },
+  "6": {
+    "graph_construction": 0.01615389995276928,
+    "random_walks": 0.19909660005941987,
+    "word2vec_training": 1.0202909000217915,
+    "total": 1.2355414000339806,
+    "num_students": 67,
+    "num_edges": 2211,
+    "clustering": 0.0627536999527365
+  }
+}

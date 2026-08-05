@@ -1,0 +1,110 @@
+{
+  "embedding_dim": {
+    "1": {
+      "silhouette": 0.5895945926507314,
+      "davies_bouldin": 0.5380498226712085,
+      "calinski_harabasz": 123.0139433204264
+    },
+    "2": {
+      "silhouette": 0.541999896367391,
+      "davies_bouldin": 0.6153424627067552,
+      "calinski_harabasz": 93.50407929686128
+    },
+    "3": {
+      "silhouette": 0.3683069447676341,
+      "davies_bouldin": 1.0677415439796152,
+      "calinski_harabasz": 36.86409558579603
+    },
+    "5": {
+      "silhouette": 0.20129736016194025,
+      "davies_bouldin": 1.7186930332304275,
+      "calinski_harabasz": 15.879538385792861
+    },
+    "10": {
+      "silhouette": 0.10476832712690036,
+      "davies_bouldin": 2.5409532805753305,
+      "calinski_harabasz": 7.918404107327775
+    }
+  },
+  "walk_length": {
+    "5": {
+      "silhouette": 0.5749500791231791,
+      "davies_bouldin": 0.5616532409912253,
+      "calinski_harabasz": 110.75809758730686
+    },
+    "10": {
+      "silhouette": 0.5670832892258962,
+      "davies_bouldin": 0.5809531728030753,
+      "calinski_harabasz": 110.190213481443
+    },
+    "20": {
+      "silhouette": 0.5593101878960928,
+      "davies_bouldin": 0.5977811731048662,
+      "calinski_harabasz": 99.08210065440676
+    },
+    "40": {
+      "silhouette": 0.5483811299006144,
+      "davies_bouldin": 0.5929210152420085,
+      "calinski_harabasz": 98.61810030660423
+    },
+    "80": {
+      "silhouette": 0.5135937631130219,
+      "davies_bouldin": 0.6520175028221847,
+      "calinski_harabasz": 89.14655713762677
+    }
+  },
+  "num_walks": {
+    "10": {
+      "silhouette": 0.5798745652039846,
+      "davies_bouldin": 0.5593512179747432,
+      "calinski_harabasz": 113.50027442285018
+    },
+    "20": {
+      "silhouette": 0.5738995174566904,
+      "davies_bouldin": 0.559617466755345,
+      "calinski_harabasz": 108.98947687521785
+    },
+    "40": {
+      "silhouette": 0.5524144917726517,
+      "davies_bouldin": 0.5877228389388073,
+      "calinski_harabasz": 102.35746243588083
+    },
+    "80": {
+      "silhouette": 0.5978978176911672,
+      "davies_bouldin": 0.5331945877639507,
+      "calinski_harabasz": 118.22251211122807
+    },
+    "160": {
+      "silhouette": 0.585030327240626,
+      "davies_bouldin": 0.5607840753168318,
+      "calinski_harabasz": 114.89817963350805
+    }
+  },
+  "window_size": {
+    "1": {
+      "silhouette": 0.5645234485467275,
+      "davies_bouldin": 0.5950184015033458,
+      "calinski_harabasz": 102.4084645350084
+    },
+    "2": {
+      "silhouette": 0.6023956040541331,
+      "davies_bouldin": 0.5244474062156629,
+      "calinski_harabasz": 118.23663975665609
+    },
+    "5": {
+      "silhouette": 0.5764525731404623,
+      "davies_bouldin": 0.5745991747235918,
+      "calinski_harabasz": 113.0278875343521
+    },
+    "10": {
+      "silhouette": 0.5493999620278677,
+      "davies_bouldin": 0.6228427619235,
+      "calinski_harabasz": 102.79944434188809
+    },
+    "20": {
+      "silhouette": 0.5823238591353098,
+      "davies_bouldin": 0.5502261570402089,
+      "calinski_harabasz": 114.52130611998932
+    }
+  }
+}

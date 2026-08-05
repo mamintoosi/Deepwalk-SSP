@@ -1,0 +1,91 @@
+{
+  "1": {
+    "deepwalk_mean": 0.5690124899148941,
+    "deepwalk_std": 0.029782245905017372,
+    "bow_score": 0.09899495384260193,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.47001753607229213,
+    "ci_lower": 0.4565833670033596,
+    "ci_upper": 0.48279240490333053
+  },
+  "2": {
+    "deepwalk_mean": 0.5616399750113488,
+    "deepwalk_std": 0.035329895038370016,
+    "bow_score": 0.23125777733873332,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.33038219767261545,
+    "ci_lower": 0.3147099638973574,
+    "ci_upper": 0.3461422584076623
+  },
+  "3": {
+    "deepwalk_mean": 0.5582716971635818,
+    "deepwalk_std": 0.024186973848665246,
+    "bow_score": 0.14214462303936237,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.41612707412421945,
+    "ci_lower": 0.40547276227355245,
+    "ci_upper": 0.42677116415083655
+  },
+  "4": {
+    "deepwalk_mean": 0.5713071078062057,
+    "deepwalk_std": 0.02885562258995416,
+    "bow_score": 0.12799083588972102,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.4433162719164848,
+    "ci_lower": 0.4306932134334802,
+    "ci_upper": 0.45571511866197584
+  },
+  "5": {
+    "deepwalk_mean": 0.589431083202362,
+    "deepwalk_std": 0.028320263288876168,
+    "bow_score": 0.1164724725352648,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.4729586106670974,
+    "ci_lower": 0.4602673778815147,
+    "ci_upper": 0.4850726831836579
+  },
+  "6": {
+    "deepwalk_mean": 0.5634523600339889,
+    "deepwalk_std": 0.03302927930142814,
+    "bow_score": 0.20245547768508518,
+    "wilcoxon_stat": 210.0,
+    "wilcoxon_p": 9.5367431640625e-07,
+    "effect_size_r": 0.8765230646861663,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_mean_diff": 0.3609968823489038,
+    "ci_lower": 0.34732464063132684,
+    "ci_upper": 0.3762880958911268
+  },
+  "aggregate": {
+    "mean_deepwalk": 0.5688524521887303,
+    "mean_bow": 0.1532193567217948,
+    "mean_improvement": 0.41563309546693544,
+    "wilcoxon_p": 0.015625,
+    "effect_size_r": 0.8987170342729172,
+    "cliffs_delta": 1.0,
+    "cliffs_interp": "Large",
+    "ci_lower": 0.37296727887900727,
+    "ci_upper": 0.45756593991991373
+  }
+}
