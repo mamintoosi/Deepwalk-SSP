@@ -1,91 +1,91 @@
 {
   "1": {
-    "deepwalk_mean": 0.5690124899148941,
-    "deepwalk_std": 0.029782245905017372,
+    "deepwalk_mean": 0.5680128008127212,
+    "deepwalk_std": 0.025009929006255788,
     "bow_score": 0.09899495384260193,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.47001753607229213,
-    "ci_lower": 0.4565833670033596,
-    "ci_upper": 0.48279240490333053
+    "ci_mean_diff": 0.4690178469701193,
+    "ci_lower": 0.45850022101239185,
+    "ci_upper": 0.4800611511005542
   },
   "2": {
-    "deepwalk_mean": 0.5616399750113488,
-    "deepwalk_std": 0.035329895038370016,
+    "deepwalk_mean": 0.5576166316866875,
+    "deepwalk_std": 0.033322789477961606,
     "bow_score": 0.23125777733873332,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.33038219767261545,
-    "ci_lower": 0.3147099638973574,
-    "ci_upper": 0.3461422584076623
+    "ci_mean_diff": 0.3263588543479542,
+    "ci_lower": 0.3117375786100725,
+    "ci_upper": 0.3406883094330529
   },
   "3": {
-    "deepwalk_mean": 0.5582716971635818,
-    "deepwalk_std": 0.024186973848665246,
+    "deepwalk_mean": 0.5746679246425629,
+    "deepwalk_std": 0.03179519962470825,
     "bow_score": 0.14214462303936237,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.41612707412421945,
-    "ci_lower": 0.40547276227355245,
-    "ci_upper": 0.42677116415083655
+    "ci_mean_diff": 0.4325233016032005,
+    "ci_lower": 0.41990044279575595,
+    "ci_upper": 0.44750585770786055
   },
   "4": {
-    "deepwalk_mean": 0.5713071078062057,
-    "deepwalk_std": 0.02885562258995416,
+    "deepwalk_mean": 0.5757326990365982,
+    "deepwalk_std": 0.03594952856551718,
     "bow_score": 0.12799083588972102,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.4433162719164848,
-    "ci_lower": 0.4306932134334802,
-    "ci_upper": 0.45571511866197584
+    "ci_mean_diff": 0.44774186314687725,
+    "ci_lower": 0.4316762046669483,
+    "ci_upper": 0.46350577378318303
   },
   "5": {
-    "deepwalk_mean": 0.589431083202362,
-    "deepwalk_std": 0.028320263288876168,
+    "deepwalk_mean": 0.5724108755588532,
+    "deepwalk_std": 0.029459359881804318,
     "bow_score": 0.1164724725352648,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.4729586106670974,
-    "ci_lower": 0.4602673778815147,
-    "ci_upper": 0.4850726831836579
+    "ci_mean_diff": 0.45593840302358835,
+    "ci_lower": 0.4430956553799984,
+    "ci_upper": 0.46904527084361286
   },
   "6": {
-    "deepwalk_mean": 0.5634523600339889,
-    "deepwalk_std": 0.03302927930142814,
+    "deepwalk_mean": 0.5661714196205139,
+    "deepwalk_std": 0.03556552875669327,
     "bow_score": 0.20245547768508518,
     "wilcoxon_stat": 210.0,
     "wilcoxon_p": 9.5367431640625e-07,
     "effect_size_r": 0.8765230646861663,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_mean_diff": 0.3609968823489038,
-    "ci_lower": 0.34732464063132684,
-    "ci_upper": 0.3762880958911268
+    "ci_mean_diff": 0.3637159419354288,
+    "ci_lower": 0.34912597592140115,
+    "ci_upper": 0.38018426898086943
   },
   "aggregate": {
-    "mean_deepwalk": 0.5688524521887303,
+    "mean_deepwalk": 0.5691020585596561,
     "mean_bow": 0.1532193567217948,
-    "mean_improvement": 0.41563309546693544,
+    "mean_improvement": 0.4158827018378614,
     "wilcoxon_p": 0.015625,
     "effect_size_r": 0.8987170342729172,
     "cliffs_delta": 1.0,
     "cliffs_interp": "Large",
-    "ci_lower": 0.37296727887900727,
-    "ci_upper": 0.45756593991991373
+    "ci_lower": 0.3718757016010133,
+    "ci_upper": 0.4546730911900579
   }
 }

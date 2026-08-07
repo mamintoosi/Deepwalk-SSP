@@ -41,7 +41,7 @@ DEFAULT_PARAMS = {
     "epochs": 30,           # ε: Word2Vec training epochs
     "hs": 1,                # hierarchical softmax
     "sg": 1,                # skip-gram architecture
-    "workers": 2,           # number of worker threads
+    "workers": 1,           # number of worker threads (1 for reproducibility)
     "n_clusters": 2,        # number of clusters for sectioning
 }
 

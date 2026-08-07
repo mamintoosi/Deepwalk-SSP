@@ -4,26 +4,19 @@
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 0.9213915799247336,
-      "std_ari": 0.07675494738619631,
-      "min_ari": 0.8391278707392429,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 1.0,
+      "std_ari": 0.0,
+      "min_ari": 1.0,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 0.4261813916622041,
-      "std_ari": 0.3894372415096769
+      "max_ari": 1.0
     }
   },
   "2": {
@@ -31,26 +24,19 @@
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 0.9591174089068825,
-      "std_ari": 0.039195978607159926,
-      "min_ari": 0.9215384615384615,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 0.8452453153551487,
+      "std_ari": 0.1483702756237127,
+      "min_ari": 0.7029960597725077,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 1.0,
-      "std_ari": 0.0
+      "max_ari": 1.0
     }
   },
   "3": {
@@ -58,53 +44,39 @@
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 1.0,
-      "std_ari": 0.0,
-      "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 0.7595989412981854,
+      "std_ari": 0.24622488447832058,
+      "min_ari": 0.4800056539281951,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 0.8543753221575558,
-      "std_ari": 0.08758743227345117
+      "max_ari": 1.0
     }
   },
   "4": {
     "kmeans": {
-      "mean_ari": 0.9845300758404848,
-      "std_ari": 0.031996118357969096,
-      "min_ari": 0.9183531780470024,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 0.9172180451127822,
+      "std_ari": 0.07190958236595327,
+      "min_ari": 0.8401360544217688,
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 0.7287261086526694,
-      "std_ari": 0.2684332487616801,
-      "min_ari": 0.46310375670840787,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 1.0,
+      "std_ari": 0.0,
+      "min_ari": 1.0,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 0.9918239649598499,
-      "std_ari": 0.024528105120450526
+      "max_ari": 1.0
     }
   },
   "5": {
@@ -112,26 +84,19 @@
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 0.9613615549994369,
-      "std_ari": 0.040301066679921574,
-      "min_ari": 0.9193263236251977,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 1.0,
+      "std_ari": 0.0,
+      "min_ari": 1.0,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 0.8647421449890292,
-      "std_ari": 0.16674764075129306
+      "max_ari": 1.0
     }
   },
   "6": {
@@ -139,26 +104,19 @@
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "max_ari": 1.0
     },
     "gmm": {
-      "mean_ari": 0.9668883571776005,
-      "std_ari": 0.0317456210336234,
-      "min_ari": 0.9364524026640817,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
+      "mean_ari": 0.6697370888712072,
+      "std_ari": 0.2845487497383812,
+      "min_ari": 0.36644771645212487,
+      "max_ari": 1.0
     },
     "agglomerative": {
       "mean_ari": 1.0,
       "std_ari": 0.0,
       "min_ari": 1.0,
-      "max_ari": 1.0,
-      "n_valid_runs": 20
-    },
-    "bow_kmeans": {
-      "mean_ari": 1.0,
-      "std_ari": 0.0
+      "max_ari": 1.0
     }
   }
 }

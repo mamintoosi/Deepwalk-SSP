@@ -7,10 +7,18 @@ Functions for data loading, graph construction, random walks, and embedding.
 
 import os
 import time
+import random
 import numpy as np
 import networkx as nx
 from gensim.models import Word2Vec
 from tqdm import tqdm
+
+
+def set_seed(seed=0):
+    """Set all random seeds for reproducibility."""
+    random.seed(seed)
+    np.random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
 
 
 def read_class(file_path):
@@ -121,7 +129,8 @@ def generate_random_walks(G, num_walks_per_node=80, walk_length=10, seed=None):
                 break
         return walk
 
-    for node in G.nodes():
+    # Sort nodes for deterministic walk order
+    for node in sorted(G.nodes()):
         for _ in range(num_walks_per_node):
             walks.append(random_walk(node, walk_length))
 
@@ -129,7 +138,7 @@ def generate_random_walks(G, num_walks_per_node=80, walk_length=10, seed=None):
 
 
 def train_word2vec(walks, vector_size=2, window=5, hs=1, sg=1, 
-                   workers=2, seed=None, epochs=30):
+                   workers=1, seed=None, epochs=30):
     """
     Trains a Word2Vec model on random walks.
     
@@ -158,7 +167,8 @@ def train_word2vec(walks, vector_size=2, window=5, hs=1, sg=1,
             window=window, 
             workers=workers, 
             seed=seed,
-            min_count=1
+            min_count=1,
+            sample=0  # Disable subsampling for reproducibility
         )
         wv_model.train(
             walks, 
@@ -180,6 +190,10 @@ def run_pipeline(file_path, vector_size=2, walk_length=10, num_walks=80,
     Returns:
         Dictionary with all results including timing information.
     """
+    # Set global seed for reproducibility
+    if seed is not None:
+        set_seed(seed)
+    
     result = {
         "file_path": file_path,
         "file_index": os.path.splitext(os.path.basename(file_path))[0],
