@@ -51,15 +51,62 @@ def run_agglomerative(data, n_clusters=2):
     return labels
 
 
+def run_spectral(data, n_clusters=2, random_state=0):
+    """Spectral Clustering on a precomputed affinity matrix.
+
+    Args:
+        data: Affinity matrix (n_samples x n_samples). Must be symmetric.
+        n_clusters: Number of clusters.
+        random_state: Random seed.
+
+    Returns:
+        Cluster labels.
+    """
+    from sklearn.cluster import SpectralClustering
+    sc = SpectralClustering(
+        n_clusters=n_clusters,
+        affinity='precomputed',
+        random_state=random_state,
+        assign_labels='kmeans',
+    )
+    labels = sc.fit_predict(data)
+    return labels
+
+
+def run_pca_kmeans(data, n_clusters=2, n_components=2, random_state=0, n_init=10):
+    """PCA dimensionality reduction followed by K-Means clustering.
+
+    Args:
+        data: Feature matrix (n_samples x n_features).
+        n_clusters: Number of clusters.
+        n_components: Number of PCA components (target dimensionality).
+        random_state: Random seed.
+        n_init: Number of K-Means initializations.
+
+    Returns:
+        Tuple of (labels, pca_reduced_data).
+    """
+    from sklearn.decomposition import PCA as PCA_decomp
+    pca = PCA_decomp(n_components=n_components, random_state=random_state)
+    reduced = pca.fit_transform(data)
+    km = KMeans(n_clusters=n_clusters, n_init=n_init, random_state=random_state)
+    labels = km.fit_predict(reduced)
+    return labels, reduced
+
+
 CLUSTERING_FUNCTIONS = {
     "kmeans": run_kmeans,
     "affinity": run_affinity_propagation,
     "gmm": run_gmm,
     "agglomerative": run_agglomerative,
+    "spectral": run_spectral,
 }
 
 # Methods that do NOT accept random_state
 METHODS_WITHOUT_SEED = {"affinity", "agglomerative"}
+
+# Methods that require an affinity/adjacency matrix (not raw features)
+METHODS_WITH_AFFINITY_MATRIX = {"spectral"}
 
 
 # ── Evaluation Metrics ────────────────────────────────────────────────────────
@@ -134,6 +181,12 @@ def evaluate_clustering(data, n_clusters=2, methods=None, random_state=0):
     results = {}
     for method in methods:
         try:
+            # Skip methods that require a square affinity matrix if data is not square
+            if method in METHODS_WITH_AFFINITY_MATRIX:
+                if data.ndim != 2 or data.shape[0] != data.shape[1]:
+                    results[method] = {"labels": None, "metrics": {}}
+                    continue
+
             fn = CLUSTERING_FUNCTIONS[method]
             if method in METHODS_WITHOUT_SEED:
                 labels = fn(data)
@@ -144,7 +197,6 @@ def evaluate_clustering(data, n_clusters=2, methods=None, random_state=0):
             metrics["n_clusters_found"] = len(np.unique(labels))
             results[method] = {"labels": labels, "metrics": metrics}
         except Exception as e:
-            print(f"Error with {method}: {e}")
             results[method] = {"labels": None, "metrics": {}}
     
     return results

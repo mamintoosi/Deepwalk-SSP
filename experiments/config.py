@@ -90,6 +90,8 @@ PUBLICATION_STYLE = {
 COLORS = {
     "deepwalk": "#2196F3",      # Blue
     "bow": "#FF9800",           # Orange
+    "pca_kmeans": "#795548",    # Brown
+    "spectral": "#607D8B",      # Blue-grey
     "deepwalk_alpha": "#BBDEFB",
     "bow_alpha": "#FFE0B2",
     "kmeans": "#E91E63",

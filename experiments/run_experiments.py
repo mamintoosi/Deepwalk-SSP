@@ -826,6 +826,17 @@ if __name__ == "__main__":
     # Step 7: Practical improvements
     improvement_df = experiment_improvements()
 
+    # Step 8: Baseline comparison (PCA+KMeans, Spectral Clustering)
+    from experiments.add_baselines import (
+        experiment_pca_kmeans, experiment_spectral_clustering,
+        generate_comparison_figure
+    )
+    pca_baseline_df = experiment_pca_kmeans()
+    pca_baseline_df.to_excel(os.path.join(RESULTS_DIR, "baseline_pca_kmeans.xlsx"), index=False)
+    spectral_baseline_df = experiment_spectral_clustering()
+    spectral_baseline_df.to_excel(os.path.join(RESULTS_DIR, "baseline_spectral.xlsx"), index=False)
+    generate_comparison_figure(pca_baseline_df, spectral_baseline_df)
+
     # ── Final Summary ────────────────────────────────────────────────────────
     total_time = time.time() - total_start
     print_header("COMPLETE: All Experiments Finished")
@@ -834,7 +845,7 @@ if __name__ == "__main__":
 
     results_files = sorted(os.listdir(RESULTS_DIR))
     for f in results_files:
-        if f.startswith("exp_") or f.startswith("repro_"):
+        if f.startswith("exp_") or f.startswith("repro_") or f.startswith("baseline_"):
             print(f"    {f}")
 
     figures_files = sorted(os.listdir(FIGURES_DIR))
