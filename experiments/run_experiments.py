@@ -579,18 +579,29 @@ def experiment_visualization():
         except Exception as e:
             print(f"    t-SNE BoW failed: {e}")
 
-        # t-SNE of embeddings (with error handling)
-        try:
-            emb_tsne = reduce_tsne(embeddings, perplexity=min(20, embeddings.shape[0]-2), random_state=42)
+        # Direct 2D visualization of DeepWalk embeddings (no t-SNE needed)
+        if embeddings.shape[1] == 2:
             plot_embedding_visualization(
                 embeddings, emb_labels,
-                f"t-SNE of DeepWalk Embeddings (Course {i})",
+                f"DeepWalk Embeddings (Course {i})",
                 f"exp_F_tSNE_DeepWalk_course{i}.png",
-                reduced_2d=emb_tsne,
+                reduced_2d=embeddings,
+                axis_labels=('Embedding Dimension 1', 'Embedding Dimension 2'),
             )
-            print(f"    t-SNE DeepWalk: OK")
-        except Exception as e:
-            print(f"    t-SNE DeepWalk failed: {e}")
+            print(f"    DeepWalk 2D direct: OK")
+        else:
+            # Fallback: t-SNE only when d > 2
+            try:
+                emb_tsne = reduce_tsne(embeddings, perplexity=min(20, embeddings.shape[0]-2), random_state=42)
+                plot_embedding_visualization(
+                    embeddings, emb_labels,
+                    f"t-SNE of DeepWalk Embeddings (Course {i})",
+                    f"exp_F_tSNE_DeepWalk_course{i}.png",
+                    reduced_2d=emb_tsne,
+                )
+                print(f"    t-SNE DeepWalk: OK")
+            except Exception as e:
+                print(f"    t-SNE DeepWalk failed: {e}")
 
     return True
 

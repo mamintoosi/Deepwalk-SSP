@@ -210,8 +210,16 @@ def plot_clustering_methods_comparison(df_all_results,
 # ── Figure 4: Embedding Visualization ────────────────────────────────────────
 
 def plot_embedding_visualization(data, labels, title, filename,
-                                  reduced_2d=None, method_name=""):
-    """Plot 2D embedding visualization with cluster coloring."""
+                                  reduced_2d=None, method_name="",
+                                  axis_labels=None):
+    """Plot 2D embedding visualization with cluster coloring.
+    
+    Args:
+        axis_labels: Tuple of (xlabel, ylabel). If None, defaults to
+                     ('Component 1', 'Component 2'). Use
+                     ('Embedding Dimension 1', 'Embedding Dimension 2')
+                     when plotting raw d=2 embeddings directly.
+    """
     setup_style()
     
     if reduced_2d is None:
@@ -229,8 +237,12 @@ def plot_embedding_visualization(data, labels, title, filename,
                    s=60, alpha=0.7, edgecolors='white', linewidth=0.5)
     
     ax.set_title(title, fontsize=13)
-    ax.set_xlabel('Component 1', fontsize=11)
-    ax.set_ylabel('Component 2', fontsize=11)
+    if axis_labels is not None:
+        ax.set_xlabel(axis_labels[0], fontsize=11)
+        ax.set_ylabel(axis_labels[1], fontsize=11)
+    else:
+        ax.set_xlabel('Component 1', fontsize=11)
+        ax.set_ylabel('Component 2', fontsize=11)
     ax.legend(framealpha=0.9)
     ax.grid(True, alpha=0.3)
     ax.set_axisbelow(True)
