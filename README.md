@@ -2,7 +2,7 @@
 
 A Python framework for solving the student sectioning problem in course timetabling using graph representation learning. The framework constructs student co-enrollment graphs and applies random-walk-based embedding (DeepWalk) to learn low-dimensional student representations that encode higher-order proximity patterns, producing substantially better clustering inputs than traditional binary enrollment matrices.
 
-**Paper:** "Graph Representation Learning for Student Sectioning in Course Timetabling" — *Progress in Artificial Intelligence* (Springer)
+**Paper:** "Revisiting the Student Sectioning Problem through Graph Representation Learning" 
 
 ## Key Results
 
@@ -122,9 +122,8 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @article{amintoosi2026graph,
-  title={Graph Representation Learning for Student Sectioning in Course Timetabling},
+  title={Revisiting the Student Sectioning Problem through Graph Representation Learning},
   author={Amintoosi, Mahmood},
-  journal={Progress in Artificial Intelligence},
   year={2026},
   publisher={Springer}
 }
